@@ -13,3 +13,5 @@ gem "sinatra-activerecord", "~> 2.0"
 gem "require_all", "~> 2.0"
 
 gem "rake", "~> 12.3"
+
+gem "pry", "~> 0.12.2"

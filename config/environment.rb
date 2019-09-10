@@ -4,9 +4,8 @@ require 'pry'
 
 require_all 'lib'
 
-ActiveRecord::Base.establish_connection(
+ActiveRecord::Base.establish_connection({
     adapter: 'sqlite3',
     database: 'db/denverrestaurants.db'
-)
+})
 
-binding.pry
