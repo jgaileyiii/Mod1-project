@@ -1,3 +1,4 @@
 class Restaurant < ActiveRecord::Base
-    belongs_to :type
+    has_many :menu_items
+    has_many :types, through: :menu_items
 end
