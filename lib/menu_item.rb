@@ -3,8 +3,5 @@ class MenuItem < ActiveRecord::Base
     belongs_to :cuisine
 end
 
-def test 
-    puts testo rino
-end
 
 
