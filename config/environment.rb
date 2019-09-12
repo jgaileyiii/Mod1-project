@@ -5,7 +5,7 @@ require 'pry'
 
 require_all 'lib'
 prompt = TTY::Prompt.new
-
+ActiveRecord::Base.logger = nil
 
 
 ActiveRecord::Base.establish_connection({
