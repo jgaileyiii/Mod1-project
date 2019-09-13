@@ -28,8 +28,8 @@ class Cli
             our_cuisine_choice = MenuItem.all.select {
                 |item| item.cuisine.name == cuisine_selection
             }.map {|selected_inst| selected_inst.restaurant.name}.uniq.join(", ")
-            end_find_cuisine = PROMPT.select("These restaurants have this cuisine: #{our_cuisine_choice}", "Restaurants", "Return")
-            if end_find_cuisine == "Restaurants"
+            end_find_cuisine = PROMPT.select("These restaurants have this cuisine: #{our_cuisine_choice}", "Menu", "Return")
+            if end_find_cuisine == "Menu"
                 puts `clear`
                 finder
             end
