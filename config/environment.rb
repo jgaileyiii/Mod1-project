@@ -12,6 +12,6 @@ ActiveRecord::Base.establish_connection({
     adapter: 'sqlite3',
     database: 'db/denverrestaurants.db'
 })
-new_user = User.new
+new_user = User.create 
 cli = Cli.new(new_user)
 cli.start

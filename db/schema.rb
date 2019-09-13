@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_11_175431) do
+ActiveRecord::Schema.define(version: 2019_09_12_211132) do
 
   create_table "cuisines", force: :cascade do |t|
     t.string "name"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2019_09_11_175431) do
     t.integer "price"
     t.integer "restaurant_id"
     t.integer "cuisine_id"
+    t.boolean "favorite", default: false
     t.index ["cuisine_id"], name: "index_menu_items_on_cuisine_id"
     t.index ["restaurant_id"], name: "index_menu_items_on_restaurant_id"
   end
